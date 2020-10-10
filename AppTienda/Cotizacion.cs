@@ -24,15 +24,14 @@ namespace AppTienda
             this.total = this.calculaTotal();
         }
 
-        private int calculaTotal()
+        private float calculaTotal()
         {
-            float rebaja = 0;
-            float aumento = 0;
+            if (cantidad > prenda.Cantidad)
+            {
+                throw new Exception("No hay stock del producto");
+            }
 
-
-
-
-            return 0;
+            return prenda.Precio * cantidad;
         }
     }
 }

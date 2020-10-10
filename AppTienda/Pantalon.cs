@@ -11,6 +11,5 @@ namespace AppTienda
         private bool chupin;
 
         public bool Chupin { get => chupin; set => chupin = value; }
-
     }
 }

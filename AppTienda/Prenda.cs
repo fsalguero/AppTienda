@@ -16,5 +16,9 @@ namespace AppTienda
         internal tipoCalidad Calidad { get => calidad; set => calidad = value; }
         public float Precio { get => precio; set => precio = value; }
         public int Cantidad { get => cantidad; set => cantidad = value; }
+
+        public float precioCalculado() {
+            return precio;
+        }
     }
 }
